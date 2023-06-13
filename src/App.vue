@@ -1,7 +1,10 @@
 <template>
   <header>
     <router-link :to="{ name: 'home' }">Home</router-link>
+    <span> | </span>
     <router-link to="/categorias">Categorias</router-link>
+    <span> | </span>
+    <router-link :to="{ name: 'editoras' }">Editoras</router-link>
   </header>
   <main>
     <RouterView />
